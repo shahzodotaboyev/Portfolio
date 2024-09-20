@@ -1,1 +1,87 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Fira Code";
+}
+
+:root {
+  --text-color: #ABB2BF;
+  --text-color2: #C470DB;
+}
+
+.contianer {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #282C33;
+}
+.contianer header {
+  height: 64px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding: 30px 0 0;
+}
+.contianer header .media-header {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  margin-left: 30px;
+  position: fixed;
+}
+.contianer header .media-header .media-header-line {
+  width: 2px;
+  height: 500px;
+  background-color: var(--text-color);
+}
+.contianer header .media-header i {
+  font-size: 35px;
+  cursor: pointer;
+  color: #ABB2BF;
+}
+.contianer header .header-inner {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.contianer header .header-inner .logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.contianer header .header-inner .logo img {
+  width: 16px;
+  height: 24px;
+}
+.contianer header .header-inner .logo h1 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.contianer header .header-inner .header-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.contianer header .header-inner .header-links a {
+  font-size: 20px;
+  color: var(--text-color);
+}
+.contianer header .header-inner .header-links a span {
+  color: var(--text-color2);
+}
+
+.contianer header .header-inner .header-links a:hover {
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
