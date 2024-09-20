@@ -1,0 +1,43 @@
+@media (max-width:1380px) {
+    .contianer {
+        padding: 10px;
+
+        header {
+            padding: 0;
+
+
+            .header-inner {
+            max-width: 1024pxgit ;
+            }
+        }
+    }
+
+}
+
+@media (max-width:1024px) {
+    .contianer {
+        padding: 10px;
+
+        header {
+            padding: 0;
+
+            .media-header {
+                display: none;
+            }
+
+            .header-inner {
+                .header-links {
+                    display: none;
+                }
+
+                .bx-menu-alt-right {
+                    font-size: 35px;
+                    display: block;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}

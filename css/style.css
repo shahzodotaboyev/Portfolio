@@ -10,6 +10,7 @@
 :root {
   --text-color: #ABB2BF;
   --text-color2: #C470DB;
+  --background-color: #282C33;
 }
 
 .contianer {
@@ -26,6 +27,7 @@
   display: flex;
   align-items: center;
   position: sticky;
+  background: var(--background-color);
   top: 0;
   padding: 30px 0 0;
 }
@@ -34,7 +36,7 @@
   flex-direction: column;
   gap: 15px;
   align-items: center;
-  margin-left: 30px;
+  margin-left: 20px;
   position: fixed;
 }
 .contianer header .media-header .media-header-line {
@@ -48,8 +50,9 @@
   color: #ABB2BF;
 }
 .contianer header .header-inner {
-  max-width: 1140px;
+  max-width: 1300px;
   margin: auto;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -58,7 +61,7 @@
 .contianer header .header-inner .logo {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
 }
 .contianer header .header-inner .logo img {
   width: 16px;
@@ -81,7 +84,42 @@
 .contianer header .header-inner .header-links a span {
   color: var(--text-color2);
 }
+.contianer header .header-inner i {
+  display: none;
+}
 
 .contianer header .header-inner .header-links a:hover {
   color: #fff;
+}
+
+@media (max-width: 1380px) {
+  .contianer {
+    padding: 10px;
+  }
+  .contianer header {
+    padding: 0;
+  }
+  .contianer header .header-inner {
+    max-width: 1024pxgit;
+  }
+}
+@media (max-width: 1024px) {
+  .contianer {
+    padding: 10px;
+  }
+  .contianer header {
+    padding: 0;
+  }
+  .contianer header .media-header {
+    display: none;
+  }
+  .contianer header .header-inner .header-links {
+    display: none;
+  }
+  .contianer header .header-inner .bx-menu-alt-right {
+    font-size: 35px;
+    display: block;
+    color: #fff;
+    cursor: pointer;
+  }
 }/*# sourceMappingURL=style.css.map */
