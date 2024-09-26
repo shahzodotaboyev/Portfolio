@@ -297,10 +297,7 @@
   .container main .home-page .home-page-left p {
     font-size: 14px;
   }
-  .container main .home-page .home-page-right {
-    width: 90%;
-  }
-  .container main .home-page .home-page-right img {
+  .container main .home-page img {
     width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
