@@ -17,7 +17,6 @@
 
 .contianer {
     width: 100%;
-    height: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,7 +57,7 @@
         }
 
         .header-inner {
-            max-width: 1300px;
+            max-width: 1050px;
             margin: auto;
             padding: 10px;
             display: flex;
@@ -109,9 +108,73 @@
     }
 
     main {
-        .section-1 {}
-    }
-}
+        max-width: 1050px;
+        width: 100%;
 
-@import '_hover.scss';
-@import '_responsive.scss';
+        .home-page {
+            display: flex;
+            justify-content: space-between;
+            height: 500px;
+            align-items: center;
+            width: 100%;
+
+            .home-page-left {
+                width: 50%;
+                background: var(--background-color);
+
+                display: flex;
+                flex-direction: column;
+
+                justify-content: center;
+
+                h1 {
+                    color: #fff;
+                    font-size: 32px;
+                    font-weight: 600;
+                    max-width: 500px;
+
+
+                    span {
+                        color: var(--text-color2)
+                    }
+                }
+
+                p {
+                    font-size: 16px;
+                    max-width: 500px;
+                    color: var(--text-color);
+                    margin: 30px 0 20px;
+                }
+
+                button {
+                    width: 162px;
+                    height: 42px;
+                    background: none;
+                    border: 1px solid var(--text-color2);
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: 600;
+                    cursor: pointer;
+
+                }
+            }
+
+            .home-page-right {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+
+                img {
+                    width: 500px;
+                    height: 425px;
+
+                }
+            }
+
+        }
+    }}
+
+    @import '_hover.scss';
+    @import '_responsive.scss'
