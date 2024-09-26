@@ -94,9 +94,9 @@
 .container main .home-page {
   display: flex;
   justify-content: space-between;
-  height: 500px;
   align-items: center;
   width: 100%;
+  margin: 30px;
 }
 .container main .home-page .home-page-left {
   width: 50%;
@@ -133,6 +133,7 @@
 .container main .home-page .home-page-right {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .container main .home-page .home-page-right img {
   width: 100%;
@@ -142,7 +143,6 @@
   align-items: center;
   gap: 10px;
   border: 1px solid var(--text-color);
-  width: 320px;
   margin: auto;
   padding: 10px;
 }
@@ -155,6 +155,11 @@
 .container main .home-page .home-page-right div p {
   color: var(--text-color);
   font-weight: 600;
+}
+.container main .projects .project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .contianer header .header-inner .header-links a:hover {
