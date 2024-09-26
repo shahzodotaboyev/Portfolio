@@ -115,10 +115,10 @@
 
         .home-page {
             display: flex;
-            // justify-content: space-between;
+
             align-items: center;
-            // width: 100%;
-            margin: 30px;
+
+            margin: 30px 0;
 
             .home-page-left {
                 width: 50%;
@@ -314,8 +314,200 @@
             }
         }
 
+        .skills {
+            margin: 40px 0;
+
+            .skills-header {
+                h1 {
+                    font-size: 32px;
+                    font-weight: 500;
+                    color: #fff;
+                    position: relative;
+                    display: inline-block;
+                    text-align: center; // H1 ichidagi textni o'z markaziga keltirish
+
+                    span {
+                        color: #c792ea; // Matn rangini o'zgartirish
+                    }
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        right: 0;
+                        left: 110%;
+                        width: 150px;
+                        margin-top: 23px;
+                        height: 2px;
+                        background-color: var(--text-color2)
+                    }
+                }
+            }
+
+
+            .skill-list {
+                display: flex;
+                gap: 300px;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+
+                .skill-block {
+                    width: 200px;
+                    height: auto;
+                    border: 1px solid var(--text-color);
+
+                    h2 {
+                        font-size: 16px;
+                        color: #fff;
+                        width: 100%;
+                        height: 41px;
+                        border: 1px solid var(--text-color);
+                        font-weight: normal;
+                        padding: 8px;
+                    }
+
+                    .skill-block-list {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+
+                        p {
+                            color: var(--text-color);
+                            margin: 10px;
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+        .about {
+            margin: 100px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .about-in {
+                .about-header {
+                    h1 {
+                        font-size: 32px;
+                        font-weight: 500;
+                        color: #fff;
+                        position: relative;
+                        display: inline-block;
+                        text-align: center; // H1 ichidagi textni o'z markaziga keltirish
+
+                        span {
+                            color: #c792ea; // Matn rangini o'zgartirish
+                        }
+
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            right: 0;
+                            left: 110%;
+                            width: 150px;
+                            margin-top: 23px;
+                            height: 2px;
+                            background-color: var(--text-color2)
+                        }
+                    }
+                }
+
+                .about-text {
+                    width: 60%;
+                    font-size: 16px;
+                    color: var(--text-color);
+                    margin: 50px 0;
+
+                    button {
+                        padding: 7px 10px;
+                        border: 1px solid var(--text-color2);
+                        background: none;
+                        font-size: 16px;
+                        color: #fff;
+                        margin-top: 30px;
+                    }
+                }
+
+                
+            }
+
+            img {
+                border-bottom: 1px solid var(--text-color2);
+                width: 40%;
+            }
+
+        }
+
+        .contacts {
+            .contacts-header {
+                h1 {
+                    font-size: 32px;
+                    font-weight: 500;
+                    color: #fff;
+                    position: relative;
+                    display: inline-block;
+                    text-align: center; // H1 ichidagi textni o'z markaziga keltirish
+
+                    span {
+                        color: #c792ea; // Matn rangini o'zgartirish
+                    }
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        right: 0;
+                        left: 110%;
+                        width: 150px;
+                        margin-top: 23px;
+                        height: 2px;
+                        background-color: var(--text-color2)
+                    }
+                }
+            }
+
+            .contacts-content {
+                display: flex;
+                justify-content: space-between;
+                margin: 50px 0;
+
+                p {
+                    max-width: 600px;
+                    color: var(--text-color)
+                }
+
+                .massage {
+                    width: 330px;
+                    height: 146px;
+                    border: 1px solid var(--text-color);
+                    padding: 15px;
+
+                    h4 {
+                        font-size: 16px;
+                        color: #fff;
+                        font-weight: normal;
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+                        font-size: 16px;
+                        line-height: 40px;
+
+                        i {
+                            font-size: 20px
+                        }
+                    }
+                }
+            }
+        }
     }
+
 }
+
 
 @import '_hover.scss';
 @import '_responsive.scss'

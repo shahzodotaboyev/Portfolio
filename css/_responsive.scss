@@ -44,6 +44,14 @@
                 .project-cards {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
+                    row-gap: 40px;
+                }
+            }
+
+            .skills {
+                .skill-list {
+                    justify-content: space-around;
+                    gap: 0;
                 }
             }
         }
@@ -54,22 +62,38 @@
 @media (max-width:675px) {
     .container {
         main {
-           .projects{
-            .project-header{
-                h1{
-                    &::before{
-                        content: "";
-                        width: 0px;
+            .projects {
+                .project-header {
+                    h1 {
+                        &::before {
+                            content: "";
+                            width: 100px;
+                        }
                     }
                 }
+
+                .project-cards {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 20px;
+                }
             }
-            .project-cards {
-                display: flex;
+
+            .about {
+                .about-in {
+                    .about-text {
+                        width: 100%;
+                    }
+                }
+
+                img {
+                    display: none;
+                }
+
                 flex-direction: column;
-                align-items: center;
-                gap: 20px;
             }
-           }
+
         }
     }
 }
@@ -78,7 +102,13 @@
     .container {
         main {
             margin-top: 50px;
-
+            .projects{
+                .project-cards{
+                    .project-card{
+                        width: 100%;
+                    }
+                }
+            }
             .home-page {
                 flex-direction: column;
                 gap: 20px;
@@ -96,12 +126,56 @@
                     }
                 }
 
-              
 
-                    img {
-                        width: 100%;
+
+                img {
+                    width: 100%;
+                }
+
+            }
+
+            .project-header {
+                h1 {
+                    &::before {
+                        content: "";
+                        width: 0px;
                     }
-                
+                }
+            }
+
+            .skills {
+                .skills-header {
+                    h1 {
+                        &::before {
+                            content: "";
+                            width: 100px;
+                        }
+                    }
+                }
+
+                .skill-list {
+                    flex-direction: column;
+                    gap: 30px;
+                    margin: 40px 0;
+                }
+            }
+
+            .contacts {
+                .contacts-header{
+                    h1{
+                        &::before{
+                            width: 100px;
+                        }
+                    }
+                }
+                .contacts-content {
+                    flex-direction: column;
+                    gap: 20px;
+                .massage{
+                    width: 90%;
+                    margin: auto;
+                }
+                }
             }
         }
     }
