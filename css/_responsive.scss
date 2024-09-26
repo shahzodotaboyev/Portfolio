@@ -114,6 +114,29 @@
                 flex-direction: column;
             }
 
+            section {
+                .about-me {
+                    img {
+                        max-width: 340px;
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+
+                    text-align: left;
+                    align-items: start;
+                    flex-direction: column;
+                    .about-me-text{
+                        width: 100%;
+                    }
+                }
+                .skills{
+                    .skill-list{
+                        flex-direction: column;
+                        gap: 30px;
+                    }
+                }
+            }
+
         }
 
         footer {

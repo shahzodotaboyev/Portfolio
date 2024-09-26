@@ -495,6 +495,23 @@
   .container main .about img {
     display: none;
   }
+  .container main section .about-me {
+    text-align: left;
+    align-items: start;
+    flex-direction: column;
+  }
+  .container main section .about-me img {
+    max-width: 340px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .container main section .about-me .about-me-text {
+    width: 100%;
+  }
+  .container main section .skills .skill-list {
+    flex-direction: column;
+    gap: 30px;
+  }
   .container footer .footer-content {
     display: flex;
     flex-direction: column;
