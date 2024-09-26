@@ -199,6 +199,7 @@
   background-color: var(--text-color2);
 }
 .container main section .fun-facts div {
+  margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 20px;
@@ -347,6 +348,9 @@
     flex-direction: column;
     gap: 30px;
   }
+  .container footer {
+    margin-top: 100px;
+  }
   .container footer .footer-content {
     display: flex;
     flex-direction: column;
@@ -415,6 +419,17 @@
   .container main .contacts .contacts-content .massage {
     width: 90%;
     margin: auto;
+  }
+  .container main section .skills .skills-header h1::before {
+    content: "";
+    width: 100px;
+  }
+  .container main section .fun-facts .fun-facts-header::before {
+    content: "";
+    width: 100px;
+  }
+  .container main section .fun-facts div {
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 375px) {

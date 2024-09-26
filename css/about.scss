@@ -252,6 +252,7 @@
                 }
 
                 div {
+                    margin-top: 30px;
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr;
                     row-gap: 20px;
@@ -265,7 +266,6 @@
                         color: var(--text-color);
                         padding: 5px;
                         border: 1px solid var(--text-color);
-
                     }
                 }
             }
