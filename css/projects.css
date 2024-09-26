@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Fira Code";
   text-decoration: none;
 }
 
@@ -11,6 +13,9 @@
   --background-color: #282C33;
 }
 
+.container {
+  background: var(--background-color);
+}
 .container header {
   height: 64px;
   width: 100%;
@@ -76,7 +81,7 @@
   color: var(--text-color2);
 }
 .container header .header-inner .header-links .project-link {
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
 }
 .container header .header-inner i {
@@ -85,8 +90,105 @@
 .container main {
   max-width: 1050px;
   width: 100%;
+  margin: auto;
+  margin-top: 60px;
+}
+.container main section {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.container main section .projects h1 {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 500;
+}
+.container main section .projects h1 span {
+  color: var(--text-color2);
+}
+.container main section .projects p {
+  font-size: 16px;
+  color: var(--text-color);
+  margin-top: 20px;
+}
+.container main section .decent h1 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.container main section .decent h1 span {
+  color: #c792ea;
+}
+.container main section .decent h1:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 110%;
+  width: 150px;
+  margin-top: 23px;
+  height: 2px;
+  background-color: var(--text-color2);
+}
+.container main section .decent .project-cards {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
+}
+.container main section .decent .project-cards .project-card {
+  width: 330px;
+  height: 444px;
+  border: 1px solid var(--text-color);
+  display: flex;
+  flex-direction: column;
+}
+.container main section .decent .project-cards .project-card img {
+  width: 100%;
+  height: 185px;
+}
+.container main section .decent .project-cards .project-card .project-techs {
+  width: 100%;
+  height: 41px;
+  border: 1px solid var(--text-color);
+  display: flex;
+  padding: 8px;
+  gap: 10px;
+}
+.container main section .decent .project-cards .project-card .project-techs p {
+  color: var(--text-color);
+  font-size: 16px;
+}
+.container main section .decent .project-cards .project-card .project-content {
+  padding: 16px;
+}
+.container main section .decent .project-cards .project-card .project-content h2 {
+  color: #fff;
+  font-weight: 500;
+}
+.container main section .decent .project-cards .project-card .project-content p {
+  color: var(--text-color);
+  font-size: 14px;
+  margin: 20px 0 10px;
+}
+.container main section .decent .project-cards .project-card .project-content .project-links {
+  max-width: 240px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.container main section .decent .project-cards .project-card .project-content .project-links a button {
+  padding: 8px 16px;
+  background: none;
+  border: 1px solid var(--text-color2);
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
 }
 .container footer {
+  margin-top: 100px;
   width: 100%;
   border-top: 1px solid var(--text-color);
   background: var(--background-color);
@@ -171,6 +273,9 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 40px;
   }
+  .container main section .decent .project-cards {
+    grid-template-columns: 1fr 1fr;
+  }
   .container main .skills .skill-list {
     justify-content: space-around;
     gap: 0;
@@ -186,6 +291,11 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+  }
+  .container main section .decent .project-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .container main .about {
     flex-direction: column;
@@ -264,5 +374,14 @@
   .container main .contacts .contacts-content .massage {
     width: 90%;
     margin: auto;
+  }
+}
+@media (max-width: 375px) {
+  .container main section .decent .decent-header h1::before {
+    content: "";
+    width: 100%;
+  }
+  .container main section .decent .project-cards .project-card {
+    width: 100%;
   }
 }/*# sourceMappingURL=projects.css.map */

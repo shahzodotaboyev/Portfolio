@@ -85,6 +85,10 @@
 .container header .header-inner .header-links a span {
   color: var(--text-color2);
 }
+.container header .header-inner .header-links .home-link {
+  font-weight: 500;
+  color: #fff;
+}
 .container header .header-inner i {
   display: none;
 }
@@ -458,6 +462,9 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 40px;
   }
+  .container main section .decent .project-cards {
+    grid-template-columns: 1fr 1fr;
+  }
   .container main .skills .skill-list {
     justify-content: space-around;
     gap: 0;
@@ -473,6 +480,11 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+  }
+  .container main section .decent .project-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .container main .about {
     flex-direction: column;
@@ -551,5 +563,14 @@
   .container main .contacts .contacts-content .massage {
     width: 90%;
     margin: auto;
+  }
+}
+@media (max-width: 375px) {
+  .container main section .decent .decent-header h1::before {
+    content: "";
+    width: 100%;
+  }
+  .container main section .decent .project-cards .project-card {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

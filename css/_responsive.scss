@@ -46,6 +46,15 @@
                     grid-template-columns: 1fr 1fr;
                     row-gap: 40px;
                 }
+
+            }
+
+            section {
+                .decent {
+                    .project-cards {
+                        grid-template-columns: 1fr 1fr;
+                    }
+                }
             }
 
             .skills {
@@ -80,6 +89,17 @@
                 }
             }
 
+            section {
+                .decent {
+                    .project-cards {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                    }
+                }
+            }
+
             .about {
                 .about-in {
                     .about-text {
@@ -95,25 +115,30 @@
             }
 
         }
-        footer{
-            .footer-content{
+
+        footer {
+            .footer-content {
                 display: flex;
                 flex-direction: column;
-                div{
-                    p{
-                        b{
+
+                div {
+                    p {
+                        b {
                             display: none;
                         }
+
                         text-align: left;
-                        flex-direction:    column;
+                        flex-direction: column;
                     }
-                    align-items: start; 
+
+                    align-items: start;
                     flex-direction: column;
                     text-align: start;
                     gap: 20px;
-                .media{
-                    display: none;
-                }
+
+                    .media {
+                        display: none;
+                    }
                 }
             }
         }
@@ -124,13 +149,15 @@
     .container {
         main {
             margin-top: 50px;
-            .projects{
-                .project-cards{
-                    .project-card{
+
+            .projects {
+                .project-cards {
+                    .project-card {
                         width: 100%;
                     }
                 }
             }
+
             .home-page {
                 flex-direction: column;
                 gap: 20px;
@@ -183,20 +210,47 @@
             }
 
             .contacts {
-                .contacts-header{
-                    h1{
-                        &::before{
+                .contacts-header {
+                    h1 {
+                        &::before {
                             width: 100px;
                         }
                     }
                 }
+
                 .contacts-content {
                     flex-direction: column;
                     gap: 20px;
-                .massage{
-                    width: 90%;
-                    margin: auto;
+
+                    .massage {
+                        width: 90%;
+                        margin: auto;
+                    }
                 }
+            }
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .container {
+        main {
+            section {
+                .decent {
+                    .decent-header {
+                        h1 {
+                            &::before {
+                                content: "";
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .project-cards {
+                        .project-card {
+                            width: 100%;
+                        }
+                    }
                 }
             }
         }
