@@ -38,8 +38,40 @@
                 }
             }
         }
+
+        main {
+            .projects {
+                .project-cards {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+        }
     }
 
+}
+
+@media (max-width:675px) {
+    .container {
+        main {
+           .projects{
+            .project-header{
+                h1{
+                    &::before{
+                        content: "";
+                        width: 0px;
+                    }
+                }
+            }
+            .project-cards {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+           }
+        }
+    }
 }
 
 @media (max-width:537px) {
