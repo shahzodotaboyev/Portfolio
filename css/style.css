@@ -19,6 +19,7 @@
   flex-direction: column;
   align-items: center;
   background: #282C33;
+  height: auto;
 }
 .contianer header {
   height: 64px;
@@ -129,15 +130,8 @@
   font-weight: 600;
   cursor: pointer;
 }
-.contianer main .home-page .home-page-right {
+.contianer main .home-page img {
   width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.contianer main .home-page .home-page-right img {
-  width: 500px;
-  height: 425px;
 }
 
 .contianer header .header-inner .header-links a:hover {
@@ -155,7 +149,7 @@
     padding: 0;
   }
   .contianer header .header-inner {
-    max-width: 1024pxgit;
+    max-width: 1024px;
   }
 }
 @media (max-width: 1024px) {
@@ -176,5 +170,27 @@
     display: block;
     color: #fff;
     cursor: pointer;
+  }
+}
+@media (max-width: 537px) {
+  .contianer main {
+    margin-top: 50px;
+  }
+  .contianer main .home-page {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contianer main .home-page .home-page-left {
+    width: 100%;
+  }
+  .contianer main .home-page .home-page-left h1 {
+    max-width: 367px;
+    font-size: 32px;
+  }
+  .contianer main .home-page .home-page-left p {
+    font-size: 14px;
+  }
+  .contianer main .home-page img {
+    width: 90%;
   }
 }/*# sourceMappingURL=style.css.map */

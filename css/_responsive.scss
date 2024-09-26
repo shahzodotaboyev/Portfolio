@@ -7,7 +7,7 @@
 
 
             .header-inner {
-            max-width: 1024pxgit ;
+                max-width: 1024px;
             }
         }
     }
@@ -40,4 +40,32 @@
         }
     }
 
+}
+
+@media (max-width:537px) {
+    .contianer {
+        main {
+        margin-top: 50px;
+            .home-page {
+                flex-direction: column;
+                gap: 20px;
+
+                .home-page-left {
+                    width: 100%;
+
+                    h1 {
+                        max-width: 367px;
+                        font-size: 32px;
+                    }
+
+                    p {
+                    font-size: 14px;}
+                }
+
+                img {
+                    width: 90%;
+                }
+            }
+        }
+    }
 }
