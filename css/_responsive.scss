@@ -1,5 +1,5 @@
 @media (max-width:1380px) {
-    .contianer {
+    .container {
         padding: 10px;
 
         header {
@@ -15,7 +15,7 @@
 }
 
 @media (max-width:1024px) {
-    .contianer {
+    .container {
         padding: 10px;
 
         header {
@@ -43,9 +43,10 @@
 }
 
 @media (max-width:537px) {
-    .contianer {
+    .container {
         main {
-        margin-top: 50px;
+            margin-top: 50px;
+
             .home-page {
                 flex-direction: column;
                 gap: 20px;
@@ -59,11 +60,16 @@
                     }
 
                     p {
-                    font-size: 14px;}
+                        font-size: 14px;
+                    }
                 }
 
-                img {
+                .home-page-right {
                     width: 90%;
+
+                    img {
+                        width: 100%;
+                    }
                 }
             }
         }
