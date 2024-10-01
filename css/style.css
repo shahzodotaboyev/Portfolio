@@ -423,6 +423,7 @@
 .container footer .footer-content div .icons a i {
   font-size: 30px;
   cursor: pointer;
+  color: var(--text-color);
 }
 .container footer p {
   text-align: center;
