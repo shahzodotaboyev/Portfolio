@@ -412,8 +412,17 @@
   color: #fff;
   font-weight: normal;
 }
-.container footer .footer-content div .icons i {
+.container footer .footer-content div .icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.container footer .footer-content div .icons a {
+  color: var(--text-color);
+}
+.container footer .footer-content div .icons a i {
   font-size: 30px;
+  cursor: pointer;
 }
 .container footer p {
   text-align: center;

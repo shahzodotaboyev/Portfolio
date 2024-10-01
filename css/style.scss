@@ -100,7 +100,8 @@
                     }
 
                 }
-                .home-link{
+
+                .home-link {
                     font-weight: 500;
                     color: #fff;
                 }
@@ -551,8 +552,16 @@
                 }
 
                 .icons {
-                    i {
-                        font-size: 30px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    a {
+                        color: var(--text-color);
+                        i {
+                            font-size: 30px;
+                            cursor: pointer;
+                            // color: var(--text-color)
+                        }
                     }
                 }
             }
