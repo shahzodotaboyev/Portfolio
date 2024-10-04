@@ -229,7 +229,7 @@
                         width: 150px;
                         margin-top: 23px;
                         height: 2px;
-                        background-color: var(--text-color2)
+                        background-color: var(--text-color2);
                     }
                 }
 
@@ -553,9 +553,11 @@
 
                 .icons {
                     display: flex;
+                    flex-direction: row;
                     align-items: center;
                     gap: 10px;
                     a {
+                        // display: flex;
                         color: var(--text-color);
                         i {
                             font-size: 30px;

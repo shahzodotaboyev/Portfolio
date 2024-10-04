@@ -414,6 +414,7 @@
 }
 .container footer .footer-content div .icons {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 10px;
 }
@@ -570,7 +571,7 @@
   .container main .home-page img {
     width: 100%;
   }
-  .container main .project-header h1::before {
+  .container main .projects .project-header h1::before {
     content: "";
     width: 0px;
   }

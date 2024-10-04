@@ -207,14 +207,16 @@
 
             }
 
+         .projects{
             .project-header {
                 h1 {
                     &::before {
                         content: "";
-                        width: 0px;
+                        width:0px;
                     }
                 }
             }
+         }
 
             .skills {
                 .skills-header {
