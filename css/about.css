@@ -259,6 +259,9 @@
 .contianer header .header-inner .header-links a:hover {
   color: #fff;
 }
+.contianer header .header-inner .header-links a:hover::before {
+  width: 100%;
+}
 .contianer main .home-page .home-page-left a button:hover {
   background-color: rgba(88, 70, 95, 0.397);
 }

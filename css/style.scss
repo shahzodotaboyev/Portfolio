@@ -94,11 +94,31 @@
                 a {
                     font-size: 20px;
                     color: var(--text-color);
+                    position: relative;
+                    transition: all  1s ease-in-out;
+
 
                     span {
                         color: var(--text-color2);
                     }
 
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 0%;
+                        height: 2px;
+                        background: var(--text-color2);
+                        bottom: -5px;
+                    transition: all  0.5s ease;
+
+
+
+                    }
+
+
+                }
+                a:hover:before{
+                    width: 100%;
                 }
 
                 .home-link {
@@ -229,7 +249,7 @@
                         width: 150px;
                         margin-top: 23px;
                         height: 2px;
-                        background-color: var(--text-color2);
+                        background-color: var(--text-color2)
                     }
                 }
 
@@ -553,12 +573,12 @@
 
                 .icons {
                     display: flex;
-                    flex-direction: row;
                     align-items: center;
                     gap: 10px;
+
                     a {
-                        // display: flex;
                         color: var(--text-color);
+
                         i {
                             font-size: 30px;
                             cursor: pointer;

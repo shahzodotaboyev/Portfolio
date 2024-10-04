@@ -5,6 +5,10 @@
                 a:hover {
                     color: #fff;
                 }
+
+                a:hover::before {
+                    width: 100%;
+                }
             }
         }
     }
