@@ -431,6 +431,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-direction: row;
 }
 .container footer .footer-content div .icons a {
   color: var(--text-color);

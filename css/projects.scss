@@ -88,11 +88,31 @@
                 a {
                     font-size: 20px;
                     color: var(--text-color);
+                    position: relative;
+                    transition: all  1s ease-in-out;
+
 
                     span {
                         color: var(--text-color2);
                     }
 
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 0%;
+                        height: 2px;
+                        background: var(--text-color2);
+                        bottom: -5px;
+                    transition: all  0.5s ease;
+
+
+
+                    }
+
+
+                }
+                a:hover:before{
+                    width: 100%;
                 }
 
                 .project-link {

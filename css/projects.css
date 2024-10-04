@@ -76,9 +76,23 @@
 .container header .header-inner .header-links a {
   font-size: 20px;
   color: var(--text-color);
+  position: relative;
+  transition: all 1s ease-in-out;
 }
 .container header .header-inner .header-links a span {
   color: var(--text-color2);
+}
+.container header .header-inner .header-links a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: var(--text-color2);
+  bottom: -5px;
+  transition: all 0.5s ease;
+}
+.container header .header-inner .header-links a:hover:before {
+  width: 100%;
 }
 .container header .header-inner .header-links .project-link {
   font-weight: 500;

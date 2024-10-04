@@ -89,12 +89,33 @@
                 a {
                     font-size: 20px;
                     color: var(--text-color);
+                    position: relative;
+                    transition: all  1s ease-in-out;
+
 
                     span {
                         color: var(--text-color2);
                     }
 
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 0%;
+                        height: 2px;
+                        background: var(--text-color2);
+                        bottom: -5px;
+                    transition: all  0.5s ease;
+
+
+
+                    }
+
+
                 }
+                a:hover:before{
+                    width: 100%;
+                }
+                
 
                 .about-link {
                     font-weight: 500;
@@ -276,6 +297,7 @@
         width: 100%;
         border-top: 1px solid var(--text-color);
         background: var(--background-color);
+        margin-top: 50px;
 
         .footer-content {
             max-width: 1024px;
