@@ -171,27 +171,30 @@
 
             }
 
-            // i {
-            //     display: none;
-            // }
+            .bx-menu-alt-right {
+                display: none;
+
+            }
 
             .headerMenu {
                 position: absolute;
                 width: 100%;
-                top: 0;
+                top: -1100%;
                 z-index: 99999999;
                 height: 1000%;
-                display: flex;
+                display: none;
                 flex-direction: column;
-                left: 110%;
+                left: 0%;
                 background: var(--background-color);
                 border: 1px solid grey;
-                padding:  30px;
+                padding: 30px;
+                transition: all 5s ease;
                 gap: 20px;
-                transition: all 0.5s ease;
+
 
                 h1 {
                     color: #C470DB;
+                    font-size: 20px;
                 }
 
                 i {
@@ -200,7 +203,6 @@
                     right: 10px;
                     color: #ABB2BF;
                     font-size: 35px;
-
                 }
 
                 .links {
@@ -221,7 +223,10 @@
             }
 
             .headerMenu0 {
-                left: 0;
+                display: flex;
+                gap: 20px;
+                transition: all 0.5s ease;
+                top: 0%;
             }
 
         }
