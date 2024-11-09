@@ -31,7 +31,14 @@
                     <a href="./html/projects.html"><span>#</span>projects</a>
                     <a href="./html/about.html"><span>#</span>about-me</a>
                 </div>
-                <i class='bx bx-menu-alt-right'></i>
+                <i onclick="headerMenu()" class='bx bx-menu-alt-right'></i>
+                <div class="headerMenu">
+                   
+                        <a class="home-link" href="#"><span>#</span>home</a>
+                        <a href="./html/projects.html"><span>#</span>projects</a>
+                        <a href="./html/about.html"><span>#</span>about-me</a>
+            
+                </div>
             </div>
         </header>
 
@@ -197,12 +204,13 @@
             </div>
             <p>© Copyright 2024. Made by Shahzod</p>
         </footer>
+        <script src="./index.js"></script>
         <script>
     
             window.addEventListener('load', function() {
                 setTimeout(function() {
                     document.getElementById('loadingWrapper').style.display = 'none';
-                }, 3000); 
+                }, 100); 
             });
         </script>
 
